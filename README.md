@@ -76,7 +76,7 @@ Aufgeteilt in Homepage, Autoscreen Seite und Termin Seite.
 ### Technischer Kontext
 ![Technischer Kontext](./readme_images/Technischer_Kontextv2.drawio.png)
 
-Wir haben zwei Komponenten:
+Wir haben drei Komponenten:
 1. Corner Automobile Website
    1. Das ist das Frontend, welches der User sieht.
    2. Hat eine Datenbankanbindung um die Autos darzustellen.
