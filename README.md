@@ -25,7 +25,7 @@ eine Website und somit mehr Kunden drauf aufmerksam zu machen.
 
 | Qualitätsziel | Erklärung |
 | ----------- | ----------- |
-| Anpassbares Benutzer <br> Schnittstelle | Die Website sollte in er Lage sein sowohl auf dem <br> Smartphone, sowie auf dem Computer einwandfrei alle <br> Elemente[^element] richtig anzuzeigen.| 
+| Anpassbare Benutzer <br> Schnittstelle | Die Website sollte in er Lage sein sowohl auf dem <br> Smartphone, sowie auf dem Computer einwandfrei alle <br> Elemente[^element] richtig anzuzeigen.| 
 | Zeitgerechtes Design                    | Das Design sollte minimalistisch sein und die wichtigsten <br> Elemente[^element] bestmöglichst darstellen. |
 | Performante Website                      | Die Website sollte nicht lange Laden müssen bis Inhalte <br> angezeigt werden|
 
@@ -44,7 +44,7 @@ eine Website und somit mehr Kunden drauf aufmerksam zu machen.
 
 | Randbedingung | Erklärung, Hintergrund |
 | ----------- | ----------- |
-|Flutter Framework| Der Hintergrund,für den Entwickler <br> ist in Flutter besser und sicherer zu werden.|
+|Flutter Framework| Der Hintergrund, für den Entwickler, <br> ist in Flutter besser und sicherer zu werden.|
 |Github| Github dient zur Versionierung des Projekts.|
 |Datenbank|Dort werden die Autos gespeichert, welche<br> der Händler anbieten möchte.|
 
@@ -56,31 +56,32 @@ eine Website und somit mehr Kunden drauf aufmerksam zu machen.
 |Zeit|Es gibt keine Zeitangaben von dem Kunden, <br> jedoch beginnt das Semester von dem Entwickler bald.|
 
 # Kontextabgrenzung
-
 ### Fachlicher Kontext
 ![User Story Board](./readme_images/Fachlicher_Kontextv1.drawio.png)
-Es wird zwei Sprints geben wobei bei dem Sprint 1 die meisten  
+
+Es wird zwei Sprints geben, wobei bei dem Sprint 1 die meisten  
 Aufgaben gemacht werden sollen und der Sprint 2 nur spezielle Funktionen  
 behandelt werden sollen.  
   
-Es gibt zwei Personen, einmal den User, welches einen Website Besucher  
+Es gibt zwei Personen, einmal den User, welches einen Websitebesucher  
 darstellt und den Autohändler, also Corner Automobile.  
   
-Die Hauptfunktionen sind Termine und der Autohandel.  
+Die Hauptfunktionen sind Termine und die Autodarstellung.  
   
 
 ![Website Mockup](./readme_images/Corner_Automobile-Website_Mockup_v1_04032022.png)
 *grober Mockup der Website*  
+Aufgeteilt in Homepage, Autoscreen Seite und Termin Seite.
 
 ### Technischer Kontext
 ![Technischer Kontext](./readme_images/Technischer_Kontextv2.drawio.png)
 
 Wir haben zwei Komponenten:
 1. Corner Automobile Website
-   1. Das ist das Frontend welches der User sieht.
+   1. Das ist das Frontend, welches der User sieht.
    2. Hat eine Datenbankanbindung um die Autos darzustellen.
 2. Autogalerie Datenbank
    1. Hier werden alle Autos des Händlers gespeichert.
 3. Autogalerie Editor
-   1. Diese App besitzt der Händler um die Autos auf
+   1. Diese App besitzt der Händler, um die Autos auf
    der Datenbank zu bearbeiten
