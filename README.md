@@ -58,5 +58,6 @@ eine Website und somit mehr Kunden drauf aufmerksam zu machen.
 # Kontextabgrenzung
 
 ### Fachlicher Kontext
-
+![User Story Board](./readme_images/Fachlicher_Kontext.drawio.png)
+![Website Mockup](./readme_images/Corner_Automobile-Website_Mockup_v1_04032022.png)
 ### Technischer Kontext
