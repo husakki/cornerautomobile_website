@@ -58,6 +58,29 @@ eine Website und somit mehr Kunden drauf aufmerksam zu machen.
 # Kontextabgrenzung
 
 ### Fachlicher Kontext
-![User Story Board](./readme_images/Fachlicher_Kontext.drawio.png)
+![User Story Board](./readme_images/Fachlicher_Kontextv1.drawio.png)
+Es wird zwei Sprints geben wobei bei dem Sprint 1 die meisten  
+Aufgaben gemacht werden sollen und der Sprint 2 nur spezielle Funktionen  
+behandelt werden sollen.  
+  
+Es gibt zwei Personen, einmal den User, welches einen Website Besucher  
+darstellt und den Autohändler, also Corner Automobile.  
+  
+Die Hauptfunktionen sind Termine und der Autohandel.  
+  
+
 ![Website Mockup](./readme_images/Corner_Automobile-Website_Mockup_v1_04032022.png)
+*grober Mockup der Website*  
+
 ### Technischer Kontext
+![Technischer Kontext](./readme_images/Technischer_Kontextv2.drawio.png)
+
+Wir haben zwei Komponenten:
+1. Corner Automobile Website
+   1. Das ist das Frontend welches der User sieht.
+   2. Hat eine Datenbankanbindung um die Autos darzustellen.
+2. Autogalerie Datenbank
+   1. Hier werden alle Autos des Händlers gespeichert.
+3. Autogalerie Editor
+   1. Diese App besitzt der Händler um die Autos auf
+   der Datenbank zu bearbeiten
