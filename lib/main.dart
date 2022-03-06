@@ -13,6 +13,7 @@ class Main extends StatelessWidget {
     return const MaterialApp(
       title: 'Corner Automobile',
       home: HomePageView(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:cornerautomobile_website/common/views/skeleton_view.dart';
 import 'package:flutter/material.dart';
 
 class HomePageView extends StatelessWidget {
@@ -5,8 +6,10 @@ class HomePageView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Text("okay"),
+    return SkeletonView(
+      body: Container(
+        child: Text("okay"),
+      ),
     );
   }
 }
