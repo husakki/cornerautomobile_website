@@ -43,7 +43,9 @@ class HomePageView extends StatelessWidget {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: [CarCard(),],
+                children: const [
+                  CarCard(),
+                ],
               ),
             ),
           ],

@@ -9,9 +9,9 @@ class CarCard extends StatelessWidget {
       child: Center(
         child: Column(
           children: [
-            Text("Mercedes"),
+            const Text("Mercedes"),
             Image.asset('assets/images/sampleImage.png'),
-            Text("Preis: 200€")
+            const Text("Preis: 200€")
           ],
         ),
       ),
