@@ -1,11 +1,15 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:cornerautomobile_website/common/views/footer.dart';
 import 'package:cornerautomobile_website/common/views/skeleton_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../common/views/car_card.dart';
+import 'car_card.dart';
+import 'carofthemonth.dart';
 
 class HomePageView extends StatelessWidget {
   const HomePageView({Key? key}) : super(key: key);
+
+  static const double _dividerHeight = 50.0;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +22,7 @@ class HomePageView extends StatelessWidget {
           height: 300,
         ),
         const Divider(
-          height: 50,
+          height: _dividerHeight,
         ),
         Center(
           child: Container(
@@ -36,24 +40,11 @@ class HomePageView extends StatelessWidget {
           ),
         ),
         const Divider(
-          height: 50,
+          height: _dividerHeight,
         ),
-        CarouselSlider(
-          options: CarouselOptions(
-            height: 400.0,
-            viewportFraction: 0.6,
-            enableInfiniteScroll: false,
-          ),
-          items: [1, 2, 3, 4, 5].map((i) {
-            return Builder(
-              builder: (BuildContext context) {
-                return const CarCard();
-              },
-            );
-          }).toList(),
-        ),
+        const CarOfTheMonth(),
         const Divider(
-          height: 50,
+          height: _dividerHeight,
         ),
         Text("Jetzt ein Terminbuchen"),
         Align(
@@ -63,23 +54,9 @@ class HomePageView extends StatelessWidget {
           ),
         ),
         const Divider(
-          height: 50,
+          height: _dividerHeight,
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            TextButton(onPressed: () => {}, child: Text("Impressum")),
-            TextButton(onPressed: () => {}, child: Text("AGB")),
-            TextButton(onPressed: () => {}, child: Text("Termin vereinbaren")),
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            TextButton(onPressed: () => {}, child: Text("Kontakt")),
-            TextButton(onPressed: () => {}, child: Text("Datenschutz")),
-          ],
-        ),
+        const Footer(),
       ],
     ));
   }
