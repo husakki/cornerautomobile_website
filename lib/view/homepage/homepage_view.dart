@@ -1,9 +1,7 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:cornerautomobile_website/common/views/footer.dart';
 import 'package:cornerautomobile_website/common/views/skeleton_view.dart';
 import 'package:flutter/material.dart';
 
-import 'car_card.dart';
 import 'carofthemonth.dart';
 
 class HomePageView extends StatelessWidget {
