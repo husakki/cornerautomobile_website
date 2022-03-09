@@ -10,7 +10,10 @@ class CarCard extends StatelessWidget {
         child: Column(
           children: [
             const Text("Mercedes"),
-            Image.asset('assets/images/sampleImage.png'),
+            Image.asset(
+              'assets/images/sampleImage.png',
+              height: 360,
+            ),
             const Text("Preis: 200€")
           ],
         ),
