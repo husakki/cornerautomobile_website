@@ -39,7 +39,11 @@ class HomePageView extends StatelessWidget {
           height: 50,
         ),
         CarouselSlider(
-          options: CarouselOptions(height: 400.0),
+          options: CarouselOptions(
+            height: 400.0,
+            viewportFraction: 0.6,
+            enableInfiniteScroll: false,
+          ),
           items: [1, 2, 3, 4, 5].map((i) {
             return Builder(
               builder: (BuildContext context) {
@@ -47,7 +51,35 @@ class HomePageView extends StatelessWidget {
               },
             );
           }).toList(),
-        )
+        ),
+        const Divider(
+          height: 50,
+        ),
+        Text("Jetzt ein Terminbuchen"),
+        Align(
+          child: ElevatedButton(
+            onPressed: () => {},
+            child: Text("button"),
+          ),
+        ),
+        const Divider(
+          height: 50,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            TextButton(onPressed: () => {}, child: Text("Impressum")),
+            TextButton(onPressed: () => {}, child: Text("AGB")),
+            TextButton(onPressed: () => {}, child: Text("Termin vereinbaren")),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            TextButton(onPressed: () => {}, child: Text("Kontakt")),
+            TextButton(onPressed: () => {}, child: Text("Datenschutz")),
+          ],
+        ),
       ],
     ));
   }

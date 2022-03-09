@@ -6,17 +6,16 @@ class CarCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: Center(
-        child: Column(
-          children: [
-            const Text("Mercedes"),
-            Image.asset(
-              'assets/images/sampleImage.png',
-              height: 360,
-            ),
-            const Text("Preis: 200€")
-          ],
-        ),
+      color: Colors.lightGreenAccent,
+      child: Column(
+        children: [
+          const Text("Mercedes"),
+          Image.asset(
+            'assets/images/sampleImage.png',
+            height: 360,
+          ),
+          const Text("Preis: 200€")
+        ],
       ),
     );
   }
