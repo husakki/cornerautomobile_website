@@ -10,16 +10,17 @@ class Footer extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            TextButton(onPressed: () => {}, child: Text("Impressum")),
-            TextButton(onPressed: () => {}, child: Text("AGB")),
-            TextButton(onPressed: () => {}, child: Text("Termin vereinbaren")),
+            TextButton(onPressed: () => {}, child: const Text("Impressum")),
+            TextButton(onPressed: () => {}, child: const Text("AGB")),
+            TextButton(
+                onPressed: () => {}, child: const Text("Termin vereinbaren")),
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            TextButton(onPressed: () => {}, child: Text("Kontakt")),
-            TextButton(onPressed: () => {}, child: Text("Datenschutz")),
+            TextButton(onPressed: () => {}, child: const Text("Kontakt")),
+            TextButton(onPressed: () => {}, child: const Text("Datenschutz")),
           ],
         ),
       ],
