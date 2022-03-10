@@ -2,7 +2,9 @@ import 'package:cornerautomobile_website/common/views/footer.dart';
 import 'package:cornerautomobile_website/common/views/skeleton_view.dart';
 import 'package:flutter/material.dart';
 
+import 'about_us.dart';
 import 'carofthemonth.dart';
+import 'title_image.dart';
 
 class HomePageView extends StatelessWidget {
   const HomePageView({Key? key}) : super(key: key);
@@ -15,28 +17,11 @@ class HomePageView extends StatelessWidget {
         body: ListView(
       scrollDirection: Axis.vertical,
       children: [
-        Image.asset(
-          'assets/images/sampleImage.png',
-          height: 300,
-        ),
+        const TitleImage(),
         const Divider(
           height: _dividerHeight,
         ),
-        Center(
-          child: Container(
-            child: const Align(
-              alignment: Alignment.center,
-              child: Text(
-                  "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."),
-            ),
-            width: 600,
-            height: 200,
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey.shade900),
-              color: Colors.grey,
-            ),
-          ),
-        ),
+        const AboutUs(),
         const Divider(
           height: _dividerHeight,
         ),
@@ -44,11 +29,11 @@ class HomePageView extends StatelessWidget {
         const Divider(
           height: _dividerHeight,
         ),
-        Text("Jetzt ein Terminbuchen"),
+        const Text("Jetzt ein Terminbuchen"),
         Align(
           child: ElevatedButton(
             onPressed: () => {},
-            child: Text("button"),
+            child: const Text("button"),
           ),
         ),
         const Divider(
