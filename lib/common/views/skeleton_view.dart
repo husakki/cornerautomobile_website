@@ -10,7 +10,7 @@ class SkeletonView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Corner Automobile"),
+        // title: const Text("Corner Automobile"),
         leading: IconButton(
           onPressed: (() => {}),
           icon: const Icon(Icons.menu),
