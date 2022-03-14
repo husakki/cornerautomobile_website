@@ -2,6 +2,7 @@ import 'package:cornerautomobile_website/constants.dart';
 import 'package:flutter/material.dart';
 
 class AboutUs extends StatelessWidget {
+  //TODO fix the alignment of the title and the SumUp's
   const AboutUs({
     Key? key,
   }) : super(key: key);
