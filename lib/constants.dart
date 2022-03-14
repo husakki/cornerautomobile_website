@@ -29,3 +29,7 @@ var mainTheme = ThemeData(
   ),
   cardColor: _thirdC,
 );
+
+Color get getMainColor => _mainC;
+Color get getSecColor => _secondaryC;
+Color get getThirdColor => _thirdC;
