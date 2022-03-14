@@ -1,3 +1,4 @@
+import 'package:cornerautomobile_website/constants.dart';
 import 'package:flutter/material.dart';
 import 'view/homepage/homepage_view.dart';
 
@@ -14,9 +15,7 @@ class Main extends StatelessWidget {
       title: 'Corner Automobile',
       home: const HomePageView(),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
-      ),
+      theme: mainTheme,
     );
   }
 }
