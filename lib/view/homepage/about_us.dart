@@ -29,7 +29,7 @@ class AboutUs extends StatelessWidget {
               aboutUsSumUp(Icons.airplanemode_active, Icons.arrow_downward,
                   "Import", "Wir importieren dein Auto"),
               aboutUsSumUp(Icons.directions_car, Icons.attach_money,
-                  "Autohandel", "Wir verkaufen und kaufen Fahrzeuge"),
+                  "Autohandel", "Wir verkaufen und\n kaufen Fahrzeuge"),
             ],
           ),
         ),
