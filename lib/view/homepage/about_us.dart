@@ -13,19 +13,25 @@ class AboutUs extends StatelessWidget {
         const Text(
           "Über Uns",
           style: TextStyle(
-            fontSize: 30,
+            fontSize: 42,
           ),
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            aboutUsSumUp(Icons.airplanemode_active, Icons.arrow_upward,
-                "Export", "Wir exportieren dein Auto"),
-            aboutUsSumUp(Icons.airplanemode_active, Icons.arrow_downward,
-                "Import", "Wir importieren dein Auto"),
-            aboutUsSumUp(Icons.directions_car, Icons.attach_money, "Autohandel",
-                "Wir verkaufen und kaufen Fahrzeuge"),
-          ],
+        const SizedBox(
+          height: 50.0,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 40),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              aboutUsSumUp(Icons.airplanemode_active, Icons.arrow_upward,
+                  "Export", "Wir exportieren dein Auto"),
+              aboutUsSumUp(Icons.airplanemode_active, Icons.arrow_downward,
+                  "Import", "Wir importieren dein Auto"),
+              aboutUsSumUp(Icons.directions_car, Icons.attach_money,
+                  "Autohandel", "Wir verkaufen und kaufen Fahrzeuge"),
+            ],
+          ),
         ),
         // Center(
         //   child: Container(
