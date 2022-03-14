@@ -1,3 +1,4 @@
+import 'package:cornerautomobile_website/constants.dart';
 import 'package:flutter/material.dart';
 
 class SkeletonView extends StatelessWidget {
@@ -9,14 +10,35 @@ class SkeletonView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        // title: const Text("Corner Automobile"),
-        leading: IconButton(
-          onPressed: (() => {}),
-          icon: const Icon(Icons.menu),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              child: const Center(child: Text("Menu")),
+              decoration: BoxDecoration(
+                color: getMainColor,
+              ),
+            ),
+            drawerItem(context, "Termin vereinbaren"),
+            drawerItem(context, "Autos"),
+            drawerItem(context, "Kontakt"),
+          ],
         ),
       ),
+      appBar: AppBar(
+          // title: const Text("Corner Automobile"),
+          ),
       body: _body,
+    );
+  }
+
+  ListTile drawerItem(BuildContext context, String text) {
+    return ListTile(
+      title: Text(text),
+      onTap: () {
+        Navigator.pop(context);
+      },
     );
   }
 }
