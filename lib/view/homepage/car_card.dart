@@ -6,7 +6,6 @@ class CarCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.lightGreenAccent,
       child: Column(
         children: [
           const Text("Mercedes"),
