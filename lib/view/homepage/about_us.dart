@@ -1,3 +1,4 @@
+import 'package:cornerautomobile_website/constants.dart';
 import 'package:flutter/material.dart';
 
 class AboutUs extends StatelessWidget {
@@ -9,14 +10,21 @@ class AboutUs extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text("Über Uns"),
+        const Text(
+          "Über Uns",
+          style: TextStyle(
+            fontSize: 30,
+          ),
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            aboutUsSumUp(const Icon(Icons.abc), "Import", "asjkdnaksdh"),
-            aboutUsSumUp(const Icon(Icons.abc), "Export", "asdasdasad"),
-            aboutUsSumUp(
-                const Icon(Icons.abc), "Autohandel", "tasdasdasdasdas"),
+            aboutUsSumUp(Icons.airplanemode_active, Icons.arrow_upward,
+                "Export", "Wir exportieren dein Auto"),
+            aboutUsSumUp(Icons.airplanemode_active, Icons.arrow_downward,
+                "Import", "Wir importieren dein Auto"),
+            aboutUsSumUp(Icons.directions_car, Icons.attach_money, "Autohandel",
+                "Wir verkaufen und kaufen Fahrzeuge"),
           ],
         ),
         // Center(
@@ -38,10 +46,28 @@ class AboutUs extends StatelessWidget {
     );
   }
 
-  Column aboutUsSumUp(Icon icon, String s, String t) {
+  Column aboutUsSumUp(
+      IconData iconcenter, IconData icondown, String s, String t) {
     return Column(
       children: [
-        icon,
+        Stack(
+          clipBehavior: Clip.none,
+          alignment: Alignment.topRight,
+          children: [
+            Icon(
+              iconcenter,
+              size: 70,
+            ),
+            Positioned(
+              left: 52,
+              child: Icon(
+                icondown,
+                size: 30,
+                color: getSecColor,
+              ),
+            ),
+          ],
+        ),
         Text(s),
         Text(t),
       ],
