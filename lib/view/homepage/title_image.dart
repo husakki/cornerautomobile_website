@@ -10,9 +10,15 @@ class TitleImage extends StatelessWidget {
     return Stack(
       alignment: Alignment.center,
       children: [
-        Image.asset(
-          'assets/images/sampleImage.png',
+        Container(
+          width: MediaQuery.of(context).size.width,
           height: 300,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              fit: BoxFit.fitWidth,
+              image: AssetImage("assets/images/sampleImage.png"),
+            ),
+          ),
         ),
         Column(
           children: const [
