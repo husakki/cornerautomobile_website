@@ -8,12 +8,22 @@ class CarCard extends StatelessWidget {
     return Card(
       child: Column(
         children: [
-          const Text("Mercedes"),
-          Image.asset(
-            'assets/images/sampleImage.png',
-            height: 360,
+          const Text("Mercedes C-Klasse AMG 63 4Matic"),
+          Stack(
+            alignment: Alignment.bottomRight,
+            children: [
+              Image.asset(
+                'assets/images/sampleImage.png',
+                height: 160,
+              ),
+              const Positioned(
+                right: 10,
+                bottom: 5,
+                child: Text("200€"),
+              ),
+            ],
           ),
-          const Text("Preis: 200€")
+          // EZ, KM, PS, Kraftstoff, Getriebe
         ],
       ),
     );
