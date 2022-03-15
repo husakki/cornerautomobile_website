@@ -12,7 +12,7 @@ class CarOfTheMonth extends StatelessWidget {
   Widget build(BuildContext context) {
     return CarouselSlider(
       options: CarouselOptions(
-        height: 420.0,
+        height: 300.0, //TODO need to fix this size
         viewportFraction: 0.6,
         enableInfiniteScroll: false,
       ),
