@@ -14,12 +14,34 @@ class CarCard extends StatelessWidget {
             children: [
               Image.asset(
                 'assets/images/sampleImage.png',
-                height: 160,
+                height: 200,
               ),
               const Positioned(
                 right: 10,
                 bottom: 5,
                 child: Text("200€"),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Column(
+                children: const [
+                  Text("EZ:2001"),
+                  Text("PS:200"),
+                  Text("Getriebe:Automatik"),
+                ],
+              ),
+              const SizedBox(
+                width: 20,
+              ),
+              Column(
+                children: const [
+                  Text("KM:100.000"),
+                  Text("Kraftstoff:Benzin"),
+                  Text("Verbrauch:10.5l/km")
+                ],
               ),
             ],
           ),
