@@ -16,8 +16,8 @@ var mainTheme = ThemeData(
     onError: Colors.red,
     background: Colors.black,
     onBackground: Colors.black,
-    surface: Colors.orange,
-    onSurface: Colors.orange,
+    surface: _secondaryC,
+    onSurface: _secondaryC,
   ),
   fontFamily: GoogleFonts.lato().fontFamily,
   elevatedButtonTheme: ElevatedButtonThemeData(
