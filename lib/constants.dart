@@ -3,7 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 Color _mainC = const Color.fromARGB(255, 141, 22, 48);
 Color _secondaryC = const Color.fromARGB(255, 109, 177, 191);
-Color _thirdC = const Color(0xFFFFEAEC);
+Color _thirdC = const Color.fromARGB(255, 226, 226, 226);
+// Color _thirdC = const Color.fromARGB(255, 212, 232, 237);
 
 var mainTheme = ThemeData(
   colorScheme: ColorScheme(
