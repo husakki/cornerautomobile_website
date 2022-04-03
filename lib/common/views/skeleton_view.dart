@@ -23,6 +23,7 @@ class SkeletonView extends StatelessWidget {
             drawerItem(context, "Termin vereinbaren"),
             drawerItem(context, "Autos"),
             drawerItem(context, "Kontakt"),
+            drawerItem(context, "Standort"),
           ],
         ),
       ),
