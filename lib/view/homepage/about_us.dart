@@ -25,10 +25,10 @@ class AboutUs extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              aboutUsSumUp(Icons.airplanemode_active, Icons.arrow_upward,
-                  "Export", "Wir exportieren dein Auto"),
-              aboutUsSumUp(Icons.airplanemode_active, Icons.arrow_downward,
-                  "Import", "Wir importieren dein Auto"),
+              aboutUsSumUp(Icons.directions_car, Icons.arrow_upward, "Export",
+                  "Wir exportieren dein Auto"),
+              aboutUsSumUp(Icons.directions_car, Icons.arrow_downward, "Import",
+                  "Wir importieren dein Auto"),
               aboutUsSumUp(Icons.directions_car, Icons.attach_money,
                   "Autohandel", "Wir verkaufen und\n kaufen Fahrzeuge"),
             ],
